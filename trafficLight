@@ -1,29 +1,26 @@
+const int RED = 13;
+const int YELLOW = 12;
+const int GREEN = 11;
 
-int LED1 = 13; //red
-int LED2 = 12; //yelow
-int LED3 = 11; //green
+void setLights(bool r, bool y, bool g) {
+  digitalWrite(RED, r);
+  digitalWrite(YELLOW, y);
+  digitalWrite(GREEN, g);
+}
 
 void setup() {
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED3, OUTPUT);
-
+  pinMode(RED, OUTPUT);
+  pinMode(YELLOW, OUTPUT);
+  pinMode(GREEN, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(LED1, HIGH);
-  digitalWrite(LED2, LOW);
-  digitalWrite(LED3, LOW);
+  setLights(HIGH, LOW, LOW);   // red
   delay(5000);
 
-  digitalWrite(LED1, LOW);
-  digitalWrite(LED2, HIGH);
+  setLights(LOW, LOW, HIGH);   // green
+  delay(5000);
+
+  setLights(LOW, HIGH, LOW);   // yellow
   delay(2000);
-
-  digitalWrite(LED1, LOW);
-  digitalWrite(LED2, LOW);
-  digitalWrite(LED3, HIGH);
-  delay(5000);
-
-
 }
