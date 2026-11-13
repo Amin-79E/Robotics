@@ -13,7 +13,9 @@ void loop() {
  if( SOUND > x){
     digitalWrite(LED, HIGH);
  }
-    
+ else{
+    digitalWrite(LED, LOW);
+ }
 
   Serial.println(SOUND);
 
