@@ -12,12 +12,6 @@ A light-dependent resistor (LDR) measures ambient light. The Arduino Uno reads t
 - Relay module (or LED + 220 Ω resistor)
 - Jumper wires, breadboard
 
-## Wiring
-| Part | Arduino pin |
-|------|-------------|
-| LDR + 10 kΩ divider (midpoint) | A0 |
-| Relay / LED signal | D7 |
-| VCC / GND | 5V / GND |
 
 ## Usage
 1. Wire the circuit as shown above.
