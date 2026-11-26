@@ -27,8 +27,6 @@ void loop() {
   if (sec < 10) lcd.print("0");
   lcd.print(sec);
 
-  //lcd.print("%d:%d:%d",sec,min,hour);
-
   delay(1000);
   sec++;
 
