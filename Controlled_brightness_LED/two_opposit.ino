@@ -1,5 +1,5 @@
 const int ledPin = 9;
-const int ledpin = 10;
+
 const int ledPin2 = 10;
 
 
